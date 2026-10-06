@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>India Heritage - Indian History & Culture</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🇮🇳 India Heritage</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#heritage">Heritage</a></li>
+                <li><a href="#personalities">Personalities</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">DISCOVER THE PAST</p>
+
+            <h1>
+                Explore the Rich History
+                <span>of India</span>
+            </h1>
+
+            <p>
+                Discover India's ancient civilizations, magnificent monuments,
+                inspiring personalities, traditions and cultural heritage.
+            </p>
+
+            <a href="#history" class="btn">Explore History</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <h2>Search Indian History</h2>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for history, monuments, personalities..."
+            >
+
+            <button onclick="searchContent()">Search</button>
+        </div>
+
+        <p id="searchResult"></p>
+
+    </section>
+
+
+    <!-- History Section -->
+    <section id="history" class="section">
+
+        <div class="section-title">
+            <p>THE JOURNEY THROUGH TIME</p>
+            <h2>Indian History</h2>
+        </div>
+
+        <div class="history-container">
+
+            <div class="history-card">
+
+                <div class="card-icon">🏺</div>
+
+                <h3>Ancient India</h3>
+
+                <p>
+                    Ancient India witnessed the rise of the Indus Valley
+                    Civilization, Vedic culture, powerful kingdoms and
+                    important philosophical traditions.
+                </p>
+
+                <button onclick="showInfo('ancient')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="history-card">
+
+                <div class="card-icon">🏰</div>
+
+                <h3>Medieval India</h3>
+
+                <p>
+                    Medieval India saw the rise of several kingdoms and
+                    empires, including the Delhi Sultanate, Vijayanagara
+                    Empire and Mughal Empire.
+                </p>
+
+                <button onclick="showInfo('medieval')">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="history-card">
+
+                <div class="card-icon">🇮🇳</div>
+
+                <h3>Modern India</h3>
+
+                <p>
+                    Modern Indian history includes colonial rule, the
+                    independence movement and India's journey toward becoming
+                    a republic.
+                </p>
+
+                <button onclick="showInfo('modern')">
+                    Learn More
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Heritage Section -->
+    <section id="heritage" class="section heritage-section">
+
+        <div class="section-title">
+
+            <p>ARCHITECTURAL TREASURES</p>
+
+            <h2>Famous Heritage Sites</h2>
+
+        </div>
+
+
+        <div class="heritage-grid">
+
+            <div class="heritage-card">
+
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg"
+                    alt="Taj Mahal"
+                >
+
+                <div class="heritage-info">
+
+                    <h3>Taj Mahal</h3>
+
+                    <p>
+                        Agra, Uttar Pradesh
+                    </p>
+
+                    <span>Mughal Architecture</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="heritage-card">
+
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Qutb_Minar_Qutub_Minar_Delhi.jpg"
+                    alt="Qutub Minar"
+                >
+
+                <div class="heritage-info">
+
+                    <h3>Qutub Minar</h3>
+
+                    <p>
+                        Delhi
+                    </p>
+
+                    <span>Indo-Islamic Architecture</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="heritage-card">
+
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Hawa_Mahal_2011.jpg"
+                    alt="Hawa Mahal"
+                >
+
+                <div class="heritage-info">
+
+                    <h3>Hawa Mahal</h3>
+
+                    <p>
+                        Jaipur, Rajasthan
+                    </p>
+
+                    <span>Rajput Architecture</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="heritage-card">
+
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Charminar_Hyderabad_1.jpg"
+                    alt="Charminar"
+                >
+
+                <div class="heritage-info">
+
+                    <h3>Charminar</h3>
+
+                    <p>
+                        Hyderabad, Telangana
+                    </p>
+
+                    <span>Indo-Islamic Architecture</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Personalities -->
+    <section id="personalities" class="section">
+
+        <div class="section-title">
+
+            <p>PEOPLE WHO SHAPED INDIA</p>
+
+            <h2>Historical Personalities</h2>
+
+        </div>
+
+
+        <div class="personality-grid">
+
+            <div class="person-card">
+
+                <div class="person-icon">👑</div>
+
+                <h3>Chandragupta Maurya</h3>
+
+                <p>
+                    Founder of the Maurya Empire and an important figure in
+                    ancient Indian history.
+                </p>
+
+            </div>
+
+
+            <div class="person-card">
+
+                <div class="person-icon">🦁</div>
+
+                <h3>Ashoka</h3>
+
+                <p>
+                    Mauryan emperor whose reign became associated with the
+                    spread of Buddhism and the use of the Ashoka Chakra.
+                </p>
+
+            </div>
+
+
+            <div class="person-card">
+
+                <div class="person-icon">⚔️</div>
+
+                <h3>Rani Lakshmibai</h3>
+
+                <p>
+                    The queen of Jhansi who became a prominent figure during
+                    the uprising of 1857.
+                </p>
+
+            </div>
+
+
+            <div class="person-card">
+
+                <div class="person-icon">🇮🇳</div>
+
+                <h3>Mahatma Gandhi</h3>
+
+                <p>
+                    A major leader of India's independence movement who
+                    advocated nonviolent resistance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Timeline -->
+    <section class="timeline-section">
+
+        <div class="section-title">
+
+            <p>A GLIMPSE THROUGH TIME</p>
+
+            <h2>Historical Timeline</h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="year">c. 2500 BCE</div>
+
+                <div class="timeline-content">
+
+                    <h3>Indus Valley Civilization</h3>
+
+                    <p>
+                        One of the world's earliest urban civilizations
+                        developed in the northwestern regions of the Indian
+                        subcontinent.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="year">c. 320 BCE</div>
+
+                <div class="timeline-content">
+
+                    <h3>Maurya Empire</h3>
+
+                    <p>
+                        Chandragupta Maurya established one of the largest
+                        empires in ancient India.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="year">1526</div>
+
+                <div class="timeline-content">
+
+                    <h3>Mughal Empire</h3>
+
+                    <p>
+                        Babur established Mughal rule in northern India after
+                        the First Battle of Panipat.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="year">1947</div>
+
+                <div class="timeline-content">
+
+                    <h3>Indian Independence</h3>
+
+                    <p>
+                        India became independent from British colonial rule
+                        on 15 August 1947.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="year">1950</div>
+
+                <div class="timeline-content">
+
+                    <h3>Republic of India</h3>
+
+                    <p>
+                        India adopted its Constitution and became a republic
+                        on 26 January 1950.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <p class="small-title">ABOUT THIS WEBSITE</p>
+
+            <h2>Preserving India's Heritage</h2>
+
+            <p>
+                India has a long and diverse history spanning thousands of
+                years. Its heritage includes architecture, languages,
+                literature, art, music, traditions and cultural practices.
+            </p>
+
+            <p>
+                This website is designed as an educational resource for
+                students and anyone interested in learning about India's
+                history and heritage.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>🇮🇳 India Heritage</h2>
+
+            <p>
+                Explore • Learn • Preserve
+            </p>
+
+            <p class="copyright">
+                © 2026 India Heritage. Educational Project.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
